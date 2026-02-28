@@ -76,17 +76,33 @@ This modular design allows independent scaling of UI, backend, and AI processing
 
 ## 🤖 Google Technologies Used
 
-| Technology | Purpose |
-|------------|----------|
+| Technology                    | Purpose                                                           |
+|-------------------------------|-------------------------------------------------------------------|
 | Gemini API (Google AI Studio) | Sentiment analysis, summarization, dish extraction, trust scoring |
-| Firebase | Authentication & real-time database |
-| Firebase Analytics | User engagement tracking |
-| Google Cloud Platform | Backend hosting & scalability |
-| Google Maps API | Location search & navigation |
+| Firebase                      | Authentication & real-time database                               |
+| Firebase Analytics            | User engagement tracking                                          |
+| Google Cloud Platform         | Backend hosting & scalability                                     |
+| Google Maps API               | Location search & navigation                                      |
 
 
 **Non-Google AI:**  
 - OpenAI Whisper (for enhanced speech transcription testing)
+
+---
+
+## ⚠️ Challenges Faced
+
+### 1. Processing Unstructured Video Reviews
+TikTok videos often contain slang, mixed languages (Malay-English), emotional exaggeration, and inconsistent phrasing. This made sentiment analysis inconsistent during early testing.  
+**Solution:** We implemented a preprocessing pipeline that cleans and standardizes transcripts before sending them to Gemini, and refined our AI prompts to better handle multilingual content.
+
+### 2. Maintaining Trust Score Transparency
+Users initially struggled to understand how the Hype vs Reality Trust Score was calculated.  
+**Solution:** We added contextual explanations and structured output categories (Pros, Cons, Top Dishes) to improve clarity and user confidence.
+
+### 3. Balancing Real-Time Processing and Performance
+Fully real-time AI processing increased latency and resource usage.  
+**Solution:** We adopted a near-real-time processing model triggered upon submission, balancing speed, scalability, and cost efficiency.
 
 ---
 
@@ -125,3 +141,4 @@ Clone the repository:
 git clone https://github.com/your-username/makanmanoi.git
 cd makanmanoi
 flutter pub get
+
