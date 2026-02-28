@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "147499526663",
+    "project_id": "foodtok-9cdae",
+    "storage_bucket": "foodtok-9cdae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147499526663:android:a7c59019fe76873cce58a2",
+        "android_client_info": {
+          "package_name": "com.yourteam.foodtok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHt50jXBCwjOg38-m9_Y86oU7myfr8zOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147499526663:android:f9dae73746f739c1ce58a2",
+        "android_client_info": {
+          "package_name": "com.zakar.foodtok.foodtok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHt50jXBCwjOg38-m9_Y86oU7myfr8zOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
